@@ -1,7 +1,9 @@
+/*header*/
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
 }
 
 header {
@@ -109,6 +111,25 @@ header {
     color: #edf0f1;
 }
 
+.HP {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.HP {
+    min-height: 100%;
+}
+
+@media only screen and (max-device-width: 1024px) {
+    .HP {
+        background-attachment: scroll;
+    }
+}
+
 @media screen and (max-height: 450px) {
     .overlay a {
         font-size: 20px;
@@ -130,4 +151,14 @@ header {
     .menu {
         display: initial;
     }
+}
+
+h1{
+
+    color: #0088a9;             /* Schriftfarbe */
+    text-align: -webkit-left;       /* Textzentrierung */
+    padding: 1%;
+    text-shadow: 1px 1px 1px #666666;            /* Schatten für text*/
+    border-radius: 20px/50%;         /* Ecken abrunden obere und untere seite / links und rechts? */
+    margin-bottom: 35px;
 }
